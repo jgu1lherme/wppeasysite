@@ -1,0 +1,175 @@
+body {
+    font-family: 'myriad pro';
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: rgba(0, 0, 7, 0.5);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #f3f3f3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-links a:hover{
+    color: #fff;
+    transition: ease all 0.2s;
+}
+
+.logo:hover{
+    transform: scale(1.05);
+    transition: ease all 0.2s;
+}
+
+img.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+    background-image: url('https://papers.co/wallpaper/papers.co-sg94-blue-aurora-night-gradation-blur-36-3840x2400-4k-wallpaper.jpg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    color: #fff;
+    height: 670px;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.hero-info{
+    font-size: 19px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 19px;
+    transition: background-color 0.3s;
+    outline-color: #f4f4f9;
+    outline: 1px solid;
+}
+
+.cta-button:hover {
+    background-color: transparent;
+    transition: ease all 0.3s;
+    transform: scale(1.02);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    margin: 20px;
+}
+
+#contact-links {
+    padding: 80px 0px 80px 0px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-container a {
+    text-decoration: none;
+    color: #333; /* Cor do texto */
+    margin: 0px 35px; /* Espaçamento entre os links */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "myriad pro";
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.icon-container a i {
+    font-size: 40px; /* Tamanho dos ícones */
+    margin-bottom: 0px; /* Espaçamento entre o ícone e o texto */
+    color: #fff; /* Cor dos ícones */
+    background-color: #005c4b;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.icon-container a i:hover {
+    font-size: 40px; /* Tamanho dos ícones */
+    margin-bottom: 0px; /* Espaçamento entre o ícone e o texto */
+    color: #fff; /* Cor dos ícones */
+    transform: scale(1.05);
+    transition: ease all 0.3s;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #111b21;
+    color: #fff;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+section#images{
+    padding: 0px 0px 30px 0px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
