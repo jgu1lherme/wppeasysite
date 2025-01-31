@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'myriad pro';
+    src: url('assets/fonts/MyriadPro.woff2') format('woff2'),
+         url('assets/fonts/MyriadPro.woff') format('woff'),
+         url('assets/fonts/MyriadPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     font-family: 'myriad pro';
     margin: 0;
