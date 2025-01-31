@@ -2,7 +2,9 @@
     font-family: 'myriad pro';
     src: url('assets/fonts/MyriadPro.woff2') format('woff2'),
          url('assets/fonts/MyriadPro.woff') format('woff'),
-         url('assets/fonts/MyriadPro.ttf') format('truetype');
+         url('assets/fonts/MyriadPro.ttf') format('truetype'),
+         url('assets/fonts/MyriadPro.otf') format('opentype');
+
     font-weight: normal;
     font-style: normal;
 }
