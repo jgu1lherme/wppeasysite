@@ -115,7 +115,7 @@ header {
 
 nav {
     width: 100%;
-    max-width: 1200px; /* Defina uma largura máxima */
+    max-width: 1200px; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,7 +192,7 @@ nav {
 
 .hero-content {
     max-width: 800px;
-    margin: 0 auto; /* Garante que o conteúdo da seção fique centralizado */
+    margin: 0 auto; 
     text-align: center;
 }
 
@@ -239,7 +239,7 @@ nav {
     font-size: 19px;
     transition: background-color 0.3s;
     outline: 1.5px solid #fff;
-    text-align: center; /* Certifica que o texto está centralizado */
+    text-align: center;
     background-color: #111b21;
 }
 
@@ -270,27 +270,23 @@ nav {
     transition: ease all 0.3s;
 }
 
-/* Ajuste da distância entre o título e as imagens acima do texto "Sistema de Login" */
-#login-system .hero-info {
-    margin-bottom: 0px;  /* Diminui a distância entre o texto e as imagens de cima */
-}
 
-/* Ajuste da distância da imagem abaixo do texto "Contamos com um sistema de login..." */
+#login-system .hero-info {
+    margin-bottom: 0px; 
+
 #login-system .image-container img {
-    margin-top: 60px;  /* Aumenta a distância entre o texto e a imagem */
+    margin-top: 60px;  
     margin-bottom: 60px;
     border-radius: 10px;
 }
 
-/* Ajuste da distância entre o título e as imagens acima do texto "Sistema de Login" */
 #pagamento .hero-info {
     margin-top: -50px;
-    margin-bottom: 0px;  /* Diminui a distância entre o texto e as imagens de cima */
+    margin-bottom: 0px;  
 }
 
-/* Ajuste da distância da imagem abaixo do texto "Contamos com um sistema de login..." */
 #pagamento .image-container img {
-    margin-top: 60px;  /* Aumenta a distância entre o texto e a imagem */
+    margin-top: 60px; 
     margin-bottom: 50px;
     border-radius: 10px;
 }
@@ -316,12 +312,12 @@ h2 {
     font-size: 29px;
 }
 
-/* efeito digitação e mudar palavras*/
+
 .digitar {
-    border-right: 2px solid #494949; /* Simulates cursor */
-    white-space: nowrap; /* Prevents text from wrapping */
-    overflow: hidden; /* Ensures text doesn't overflow its container */
-    animation: typing 3s steps(40, end); /* 3s duration, 40 steps, ends at 'end' */
+    border-right: 2px solid #494949; 
+    white-space: nowrap;
+    overflow: hidden; 
+    animation: typing 3s steps(40, end); 
     color: #095d56;
   }
   
