@@ -2,11 +2,15 @@
 
 **WhatsApp Easy** é um robô criado para facilitar e automatizar o envio de mensagens em massa, prospecções e até promoções via **WhatsApp Business**. Tudo de forma prática, segura e com baixo risco de bloqueio de chip.
 
+## 🌐 Site
+
+👉 [Site WhatsApp Easy](https://www.wppeasy.com.br/)
+
 ---
 
 ## 📥 Download
 
-👉 [WhatsApp Easy Download](#) *(coloque aqui o link real do seu instalador)*
+👉 [WhatsApp Easy Download](https://drive.google.com/file/d/1V_N_S9JB1AmQSo5VB0Jo9A7-krYffxtj/view)
 
 Após adquirir sua licença, use os seguintes dados para login:
 
@@ -35,7 +39,7 @@ Para usar o WhatsApp Easy, você precisa preparar uma planilha Excel com:
 - Mensagens desejadas
 - Imagens ou vídeos (opcional)
 
-👉 [Baixe aqui a planilha modelo](#) *(coloque aqui o link real do Google Drive da planilha modelo)*
+👉 [Baixe aqui a planilha modelo](https://docs.google.com/spreadsheets/u/2/d/1JCNJFy0AA_ED3h9OuQlU1_IAtotn2oys/edit?usp=sharing&ouid=101250709887559080215&rtpof=true&sd=true)
 
 Basta preencher a planilha, fazer o upload no WhatsApp Easy e o robô cuidará do resto!
 
@@ -75,7 +79,7 @@ Embora o WhatsApp Easy suporte até **500 mensagens diárias**, recomendamos ini
 
 Precisa de ajuda ou tem dúvidas? Entre em contato:
 
-📞 WhatsApp: [+55 22 974040083]
+📞 WhatsApp: [Clique aqui para entrar em contato](https://api.whatsapp.com/send/?phone=5522974040083&text&type=phone_number&app_absent=0)
 
 ---
 
