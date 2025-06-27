@@ -3,71 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WhatsApp Easy - Envio fácil de mensagens!</title>
+    <title>WhatsApp Easy - Automação e Envio em Massa</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#otimization">Sobre</a></li>
-                <li class="logo"><a href="#home"><img src="assets/logo.png" class="logo"></a></li>
-                <li><a href="contato.html">Contato&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="home" class="hero-section">
-        <div class="hero-content">
-            <h1>WhatsApp Easy, a certeza do trabalho bem feito.</h1>
-            <p>Otimize seu trabalho com a <span class="palavra">melhor</span> ferramenta de prospecção e envio de mensagens.<br>
-            Cadastre-se agora e teste <span class="palavra">grátis</span> por 7 dias!</p>
-            <a href="https://pay.kiwify.com.br/HsmIzPU" target="_blank" class="cta-button">Download</a>
-        </div>
-    </section>
-    <section id="otimization">
-    <div class="hero-info">
-        <h2>A ideia</h2>
-        <p>Com a necessidade de enviar mensagens em massa, desenvolvemos a <br>
-            melhor ferramenta para aumentar suas <Br><span class="digitar" id="digitar">vendas</span></p>
-    </div>
-    <script src="script.js"></script>
-        
-    </section>
-    <section id="images">
-        <div class="image-container">
-            <img src="assets/wppeasy.png" alt="Imagem Aleatória">
-            <img src="assets/modelo.png" alt="Imagem Aleatória">
-        </div>
-    </section>
-    <section id="login-system">
-        <div class="hero-info">
-            <br>
-            <br>
-            <h2>Sistema de Login</h2>
-            <p>Contamos com um sistema de login e de assinatura em um <span class="palavra">servidor dedicado</span> na nuvem que garantem segurança
-                <br> e o maior profissionalismo da ferramenta.</p>
-        </div>
-        <div class="image-container">
-            <img src="assets/login.png" alt="Sistema de Login">
-            <img src="assets/nuvem.png" alt="Sistema de Login">
-        </div>
-    </section>
-    <section id="pagamento" class="pagamento-section">
-        <div class="hero-info">
-            <h2>Assinaturas</h2>
-            <p>O <span class="palavra">WhatsApp Easy</span> trabalha com um plano de assinatura mensal, onde a cada pagamento
-                <br>o plano do cliente se torna ativo, liberando seu login. Ao realizar o pagamento você <br>
-                 consegue ver pela ferramenta quantos dias restantes ainda tem até a renovação.</p>
-        </div>
-        <div class="image-container">
-            <a href="https://pay.kiwify.com.br/HsmIzPU" target="_blank"> 
-                <img src="assets/aceitamos.png" alt="Sistema de Login">
-            </a>
-        </div>        
-    </section>
+
+<header>
+    <nav class="nav-container">
+        <a href="#home" class="nav-logo-link">
+            <img src="assets/logo.png" alt="Logo WhatsApp Easy" class="logo">
+            <span class="logo-text">WhatsApp Easy</span> </a>
+        <ul class="nav-links">
+            <li><a href="#features">Funcionalidades</a></li>
+            <li><a href="#testimonials">Depoimentos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>A automação inteligente <Br>para o seu WhatsApp.</h1>
+                <p>Otimize seu trabalho com a <span class="highlight">melhor</span> ferramenta de prospecção e envio de mensagens. Teste <span class="highlight">grátis</span> por 7 dias!</p>
+                <a href="https://pay.kiwify.com.br/HsmIzPU" target="_blank" class="cta-button">Baixar para Windows</a>
+            </div>
+        </section>
+
+        <section id="features" class="features-section">
+            <div class="section-container">
+                <h2>Por que escolher o WhatsApp Easy?</h2>
+                <p class="section-subtitle">Desenvolvemos a ferramenta ideal para escalar suas conversas e aumentar suas <span class="typing-container"><span class="typing-effect"></span></span></p>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <img src="assets/wppeasy.png" alt="Interface do WhatsApp Easy">
+                        <h3>Envio em Massa</h3>
+                        <p>Envie mensagens personalizadas para toda a sua lista de contatos com apenas alguns cliques. Perfeito para campanhas e comunicados.</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="assets/nuvem.png" alt="Nuvem representando servidor dedicado">
+                        <h3>Assinatura Flexível</h3>
+                        <p>Nosso plano mensal ativa seu acesso instantaneamente. Controle seus dias restantes e renove de forma simples e transparente.</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="assets/login.png" alt="Tela de Login Segura">
+                        <h3>Sistema de Login Seguro</h3>
+                        <p>Acesse sua conta com segurança em nosso servidor dedicado na nuvem, garantindo a proteção dos seus dados e de seus clientes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section">
+            <div class="section-container">
+                <h2>O que nossos clientes dizem</h2>
+                <p class="section-subtitle">A confiança de quem usa e aprova nossa ferramenta.</p>
+
+                <div class="testimonial-carousel">
+                    <button class="carousel-button prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-track-container">
+                        <div class="testimonial-track">
+                            <div class="testimonial-card">
+                                <img src="src/alternativa.png" alt="Foto do Cliente 1" class="testimonial-avatar">
+                                <p class="testimonial-text">“Depois que começamos a usar o WhatsApp Easy aqui na distribuidora,
+                                     ficou muito mais rápido mandar promoções e avisos pros clientes. Ganhamos tempo e o pessoal 
+                                     do balcão consegue focar melhor nas entregas e no estoque.”</p>
+                                <h4 class="testimonial-author">Nova Alternativa Distribuidora</h4>
+                                <span class="testimonial-role">Distribuidora Matcon</span>
+                            </div>
+                            <div class="testimonial-card">
+                                <img src="src/beaver.jpg" alt="Foto do Cliente 2" class="testimonial-avatar">
+                                <p class="testimonial-text">"A ferramenta é muito fácil pois se baseia e o suporte é muito 
+                                    atencioso. A automação de mensagens me permite focar na estratégia."</p>
+                                <h4 class="testimonial-author">Beaver Consultoria</h4>
+                                <span class="testimonial-role">Consultoria e Soluções de T.I</span>
+                            </div>
+                            <div class="testimonial-card">
+                                <img src="src/andreia.png" alt="Foto do Cliente 3" class="testimonial-avatar">
+                                <p class="testimonial-text">"Finalmente uma solução que entende a necessidade de quem trabalha 
+                                    com marketing e precisa enviar muitas mensagens. O sistema de login e a gestão da assinatura
+                                     são muito profissionais."</p>
+                                <h4 class="testimonial-author">Andreia Vidal</h4>
+                                <span class="testimonial-role">Soluções Sustentáveis</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-button next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                 <div class="carousel-indicators">
+                    </div>
+            </div>
+        </section>
+
+        <section id="pagamento" class="pagamento-section">
+            <div class="section-container">
+                <h2>Pronto para começar?</h2>
+                <p>Escolha o plano que cabe no seu bolso e junte-se a centenas de profissionais que já estão otimizando seu tempo e seus resultados.</p>
+                <a href="https://pay.kiwify.com.br/HsmIzPU" target="_blank" class="cta-button">Ver Planos e Assinar</a>
+                <img src="assets/aceitamos.png" alt="Métodos de Pagamento Aceitos" class="payment-methods">
+            </div>
+        </section>
+    </main>
+
     <footer>
         <p>&copy; 2025 WhatsApp Easy. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
