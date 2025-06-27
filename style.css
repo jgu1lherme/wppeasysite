@@ -47,6 +47,8 @@
 
 html {
     scroll-behavior: smooth;
+    /* Adicionado para garantir que os links de âncora não fiquem escondidos atrás do header fixo */
+    scroll-padding-top: 70px; 
 }
 
 body {
@@ -56,9 +58,7 @@ body {
     line-height: 1.6;
 }
 
-main {
-    padding-top: 0px; 
-}
+/* A regra de 'padding-top' do main foi removida para o fundo ficar atrás do header */
 
 section {
     padding: 80px 20px;
@@ -100,6 +100,7 @@ h2 {
 header {
     background-color: var(--header-bg);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     position: fixed;
     top: 0;
     width: 100%;
@@ -109,7 +110,6 @@ header {
     align-items: center;
     z-index: 1000;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    border-block-color: rgb(255 255 255 / 63%);
 }
 
 .nav-container {
@@ -127,15 +127,7 @@ header {
     transition: transform 0.3s ease;
 }
 
-
-.logo {
-    /* Mantenha suas estilizações para a imagem da logo */
-    width: 50px;
-    height: auto;
-}
-
 .logo-text {
-    /* Mantenha as estilizações para o seu texto */
     font-size: 1.5em;
     font-weight: bold;
     color: #333;
@@ -199,6 +191,15 @@ header {
     color: #fff;
 }
 
+.nav-menu-button {
+    display: none; /* Escondido em desktop */
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 1.8rem;
+    cursor: pointer;
+    z-index: 1100;
+}
 
 /* --- BOTÃO DE AÇÃO (COMPARTILHADO) --- */
 .cta-button {
@@ -242,9 +243,9 @@ PÁGINA PRINCIPAL (index.html)
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: calc(100vh - 190px);
     height: 800px;
     max-height: 690px;
+    padding: 70px 20px 0 20px; /* Adicionado padding-top para compensar a remoção do padding do main */
 }
 
 #home .hero-content h1 {
@@ -267,6 +268,7 @@ PÁGINA PRINCIPAL (index.html)
 
 .typing-container {
     display: inline-block;
+    height: 1.5em; /* Define uma altura fixa para evitar "pulos" */
 }
 
 .typing-effect {
@@ -348,6 +350,7 @@ PÁGINA PRINCIPAL (index.html)
 
 .testimonial-card {
     flex: 0 0 100%;
+    min-width: 100%;
     background: var(--card-bg);
     border-radius: 12px;
     padding: 40px;
@@ -362,7 +365,6 @@ PÁGINA PRINCIPAL (index.html)
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    /* border: 4px solid var(--primary-dark); */
     margin-bottom: 20px;
     object-fit: cover;
 }
@@ -456,7 +458,7 @@ PÁGINA PRINCIPAL (index.html)
 .payment-methods {
     display: block;
     margin: auto;
-    max-width: 500px; /* ajuste se quiser */
+    max-width: 500px; 
     height: auto;
     border-radius: 10px;
 }
@@ -469,15 +471,19 @@ PÁGINA DE CONTATO (contato.html)
 
 #contact-hero.hero-section {
     background: url('assets/bg2.png') no-repeat center center/cover;
-    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
     min-height: auto;
     color: var(--text-light);
     text-align: center;
     font-size: 25px;
+    padding: 70px 20px 0 20px; /* Adicionado padding-top para compensar */
 }
 
 #contact-hero.hero-section h1{
-    margin-top: 45px;
+    margin-top: 0;
 }
 
 .contact-links-section {
@@ -527,6 +533,8 @@ PÁGINA DE CONTATO (contato.html)
     transform: scale(1.1);
 }
 
+/* Efeito de hover/clique para WhatsApp */
+.whatsapp-container.is-active .whatsapp-options,
 .whatsapp-container:hover .whatsapp-options {
     opacity: 1;
     visibility: visible;
@@ -541,7 +549,7 @@ PÁGINA DE CONTATO (contato.html)
     position: absolute;
     bottom: 100%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, 0); /* Estado inicial */
     background-color: var(--primary-dark);
     padding: 15px;
     border-radius: 10px;
@@ -549,6 +557,7 @@ PÁGINA DE CONTATO (contato.html)
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    z-index: 20;
 }
 
 .whatsapp-options a.whatsapp-number {
@@ -566,32 +575,126 @@ PÁGINA DE CONTATO (contato.html)
 
 /* --- MEDIA QUERIES PARA RESPONSIVIDADE --- */
 @media (max-width: 768px) {
-    .nav-links {
-        gap: 20px;
+    /* ADICIONE ESTAS 9 LINHAS ABAIXO */
+    main {
+        padding-top: 70px; /* Devolve o espaçamento para o celular */
     }
+
+    #home.hero-section,
+    #contact-hero.hero-section {
+        padding-top: 60px; /* Reseta o padding para o padrão da seção no celular */
+    }
+    
+    section {
+        padding: 60px 20px; 
+    }
+
+    .section-subtitle {
+        margin-bottom: 40px; /* Reduz a margem do subtítulo */
+    }
+
+    /* --- Menu Hambúrguer --- */
+    .nav-menu-button {
+        display: block; /* Mostra o botão do menu */
+    }
+
+    .nav-links {
+        display: none; /* Esconde os links por padrão */
+        position: absolute;
+        top: 70px; /* Abaixo do header */
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: var(--primary-dark);
+        gap: 0;
+        text-align: center;
+    }
+
+    .nav-links.mobile-menu {
+        display: flex; /* Mostra o menu quando a classe é aplicada */
+    }
+
+    .nav-links li {
+        width: 100%;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .nav-links a {
+        display: block;
+        padding: 20px;
+        width: 100%;
+    }
+    .nav-links a::after {
+        display: none; /* Remove o sublinhado animado no mobile */
+    }
+    .nav-links a:hover {
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+    
+    /* --- Ajustes das Seções Hero --- */
+    #home.hero-section {
+        height: 60vh; /* Altura relativa à viewport */
+        min-height: 450px;
+        max-height: none;
+    }
+    #contact-hero.hero-section {
+        height: 300px;
+    }
+    #home .hero-content h1 {
+        font-size: clamp(2rem, 10vw, 2.5rem); /* Ajusta o tamanho da fonte */
+    }
+    #home .hero-content p {
+        font-size: clamp(1rem, 5vw, 1.2rem); /* Ajusta o tamanho da fonte */
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    /* --- Carrossel de Depoimentos --- */
     .carousel-button {
         display: none; /* Esconde botões de seta em telas pequenas */
     }
     .testimonial-track-container {
         overflow-x: auto; /* Permite arrastar com o dedo */
         scroll-snap-type: x mandatory;
-        -ms-overflow-style: none;
-        scrollbar-width: none;
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        padding-bottom: 15px; /* Espaço para a barra de rolagem não sobrepor conteúdo */
     }
     .testimonial-track-container::-webkit-scrollbar {
-        display: none;
+        display: none; /* Esconde a barra de rolagem */
     }
     .testimonial-track {
-        justify-content: flex-start;
         gap: 20px;
-        padding: 0 20px; /* Garante que os cards não colem nas bordas */
+        padding: 0 5vw; /* Garante que os cards não colem nas bordas */
     }
     .testimonial-card {
-        flex: 0 0 90%;
+        flex: 0 0 90%; /* Cada card ocupa 90% da largura do container */
+        min-width: 90%;
         scroll-snap-align: center;
+        padding: 30px;
     }
+
+    /* --- Contato --- */
     .icon-container {
         flex-direction: column;
         align-items: center;
+    }
+    .contact-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Oculta a imagem de pagamento em telas pequenas */
+    .payment-methods {
+        display: none;
+    }
+    
+    /* Remove o hover do desktop para o botão do WhatsApp no mobile */
+    .whatsapp-container:hover .whatsapp-options {
+        opacity: 0;
+        visibility: hidden;
+    }
+    .whatsapp-container.is-active .whatsapp-options {
+        opacity: 1;
+        visibility: visible;
     }
 }
