@@ -10,7 +10,7 @@
 
 ## 📥 Download
 
-👉 [WhatsApp Easy Download](https://drive.google.com/file/d/1V_N_S9JB1AmQSo5VB0Jo9A7-krYffxtj/view)
+👉 [WhatsApp Easy Download](https://pay.kiwify.com.br/HsmIzPU)
 
 Após adquirir sua licença, use os seguintes dados para login:
 
