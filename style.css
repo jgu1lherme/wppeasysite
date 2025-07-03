@@ -361,6 +361,23 @@ PÁGINA PRINCIPAL (index.html)
     text-align: center;
 }
 
+.testimonial-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonial-card .testimonial-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    text-decoration: none;
+    color: inherit;
+}
+
+
 .testimonial-avatar {
     width: 90px;
     height: 90px;
@@ -671,6 +688,19 @@ PÁGINA DE CONTATO (contato.html)
         min-width: 90%;
         scroll-snap-align: center;
         padding: 30px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .testimonial-card .testimonial-link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        text-decoration: none;
+        color: inherit;
     }
 
     /* --- Contato --- */
